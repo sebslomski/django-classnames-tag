@@ -1,0 +1,32 @@
+{% load classnames %}
+
+<html>
+    <head>
+        <style>
+            .bold {
+                font-weight: bold;
+            }
+
+            .high {
+                color: green;
+            }
+
+            .low {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="{% classnames bold=important %}">
+            Important
+        </div>
+
+        <div class="{% classnames bold=False %}">
+            Not important
+        </div>
+
+        <div class="{% classnames high=percentage|gte:50 low=percentage|lte:20 %}">
+            Percentage = 20
+        </div>
+    </body>
+</html>
