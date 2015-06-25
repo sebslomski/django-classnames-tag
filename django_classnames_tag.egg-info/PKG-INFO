@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: django-classnames-tag
+Version: 0.1
+Summary: Django classnames template tag
+Home-page: http://github.com/sebslomski/django-classnames-tag
+Author: Sebastian Slomski
+Author-email: me@sebslomski.com
+License: BSD
+Description: # Django Classnames Tag
+        Provides a template tag to create css classnames easily.
+        Inspired by JedWatson/classnames
+        
+        ## Installation
+        ```
+        $ pip install django-classnames-tag
+        ```
+        
+        Add the app to INSTALLED_APPS:
+        ```
+        INSTALLED_APPS += ['django_classnames_tag']
+        ```
+        
+        
+        ## Usage
+        ```
+        {% classnames <classname>=<bool> <classname>=<value>|eq:3 <classname>=<value>|lte:2 %}
+        ```
+        
+        Example:
+        ```
+        {% load classnames %}
+        
+        <a class="{% classnames success=obj.percentage|gte=90 danger=obj.percentage|lte:10 %}">...</a>
+        ```
+        
+        There are a bunch of helper filters available:
+        ```
+        lte, lt, eq, gt, gte
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

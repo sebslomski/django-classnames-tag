@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+django_classnames_tag/__init__.py
+django_classnames_tag/__init__.pyc
+django_classnames_tag.egg-info/PKG-INFO
+django_classnames_tag.egg-info/SOURCES.txt
+django_classnames_tag.egg-info/dependency_links.txt
+django_classnames_tag.egg-info/not-zip-safe
+django_classnames_tag.egg-info/top_level.txt
+django_classnames_tag/templatetags/__init__.py
+django_classnames_tag/templatetags/__init__.pyc
+django_classnames_tag/templatetags/async.py
+django_classnames_tag/templatetags/classnames.py
+django_classnames_tag/templatetags/classnames.pyc
