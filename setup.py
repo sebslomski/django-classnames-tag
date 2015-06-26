@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-classnames-tag',
-    version='0.1',
+    version='0.2',
     include_package_data=True,
     packages=['django_classnames_tag'],
     url='http://github.com/sebslomski/django-classnames-tag',
